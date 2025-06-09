@@ -1,0 +1,77 @@
+[
+    {
+        "time": "8:00-9:00",
+        "activity": "Math Lecture",
+        "location": "Home"
+    },
+    {
+        "time": "9:00-9:15",
+        "activity": "Short break",
+        "location": "Home"
+    },
+    {
+        "time": "9:15-10:15",
+        "activity": "Data science",
+        "location": "Home"
+    },
+    {
+        "time": "10:15-10:30",
+        "activity": "Short break",
+        "location": "Home"
+    },
+    {
+        "time": "10:30-11:30",
+        "activity": "Data science",
+        "location": "Home"
+    },
+    {
+        "time": "11:30-12:30",
+        "activity": "Lunch",
+        "location": "Home"
+    },
+    {
+        "time": "12:30-13:30",
+        "activity": "Buffer/Relaxation",
+        "location": "Home"
+    },
+    {
+        "time": "13:30-14:30",
+        "activity": "Buffer/Relaxation",
+        "location": "Home"
+    },
+    {
+        "time": "14:30-15:30",
+        "activity": "Buffer/Relaxation",
+        "location": "Home"
+    },
+    {
+        "time": "15:30-16:30",
+        "activity": "Buffer/Relaxation",
+        "location": "Home"
+    },
+    {
+        "time": "16:30-17:30",
+        "activity": "Buffer/Relaxation",
+        "location": "Home"
+    },
+    {
+        "time": "17:30-18:30",
+        "activity": "Dinner",
+        "location": "Home"
+    },
+    {
+        "time": "18:30-19:30",
+        "activity": "Relaxation/Leisure",
+        "location": "Home"
+    },
+    {
+        "time": "19:30-20:30",
+        "activity": "Relaxation/Leisure",
+        "location": "Home"
+    },
+    {
+        "time": "20:30-21:30",
+        "activity": "Wind down/Prepare for bed",
+        "location": "Home"
+    }
+]

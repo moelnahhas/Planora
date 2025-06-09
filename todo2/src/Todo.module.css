@@ -1,0 +1,165 @@
+
+/* the big white box which holds everything - formats everything in the component  */
+.todoContainer { 
+  display: flex;
+  flex-direction: column;  /* Makes the title and form stack vertically */
+  justify-content: center; /*Centers the content horizontally */
+  align-items: center;     /* Centers the content vertically */
+  height: 75vh;       
+  overflow: hidden; /* Prevents scrolling of the whole container */
+  max-height: 80vh;        /* Prevents the height from growing beyond the viewport */    
+  text-align: center;      /* Centers text within the container */
+  background-color: white;
+  background-color: white; /* Background color only for the box */
+  border-radius: 10px;     /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a floating effect */
+  width: 100%; 
+  padding: 4% 4% 1% 4%;  
+  min-width: 80vh;
+  margin-top: 2rem;
+}
+
+/* just the title  */
+.todoTitle {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.1rem;
+  color: black;
+  margin: 0.2rem;     /* Adds space below the title */
+}
+
+/*  */
+.todoForm {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 80vh;  /* Limits the width of the form */
+  padding: 0.1rem;   /* Adds some padding to the sides */
+  flex-grow: 1;
+  overflow-y: auto;        /* Enables vertical scrolling if content overflows */
+  margin-bottom: 2rem; /* Adds spacing below the form */
+}
+
+
+/* for the todo inputs and the checkbox, basically those whole lines/box sections */
+.inputContainer {
+  display: flex;
+  align-items: center;    /* Aligns items in the same row */
+  justify-content: space-between; /* Distributes space between input and buttons */
+  gap: 1rem;  /* Space between input and buttons */
+  width: 100%;
+
+}
+
+/* Checkbox styles */
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #d1b3e2;
+}
+
+
+/* the default todo box input - the purple stuff */
+.todoInput {
+  padding: 0.5rem;
+  border: 1px solid #d1b3e2;
+  width: 100%;  /* Takes up remaining space */
+  border-radius: 0.375rem;
+  outline: none;
+  resize: none;
+  transition: background-color 0.3s;
+}
+
+/* what do it do ... */
+.todoInput:focus {
+  border-color: #441b5f;
+  background-color: #f5f3ff;
+}
+
+/* Conditional styling for checked input */
+.todoInput.checked {
+  text-decoration: line-through;
+  background-color: #debff4;
+  color: #bd66dd;
+}
+
+.todoInput.unchecked {
+  background-color: #f2e1f4;
+  /* background-color: #e0d0f7; */
+}
+
+
+/* the BUTTONS for clear, +, schedule etc. */
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* margin-top: 1rem; makes it fixed on the bottom! */ 
+  flex-direction: row; /* Ensures buttons are aligned horizontally */
+  /* margin-top: 28rem; */
+  margin-top: auto;  /* Adjusted to push the buttons to the bottom of the container */
+
+  position: relative; /* Allow buttons to stay in place without being affected by form scroll */
+}
+
+
+/* Delete button styles */
+.deleteBtn {
+  margin: 0.5rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: min-content;
+  border:none;  
+}
+
+.deleteBtn:hover {
+  background-color: rgba(185, 184, 184, 0.361);
+  padding: 0.1rem 0.4rem; }
+
+  /* Button styles FOR SAVE, +, CLEAR AND SCHEDULE */
+.button {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #946fde;
+  color: white;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #7b52cc;
+}
+
+.loadingButton {
+  background-color: #86e273; /* Grey or any color you prefer */
+  cursor: not-allowed;
+}
+
+.loadingButton:hover {
+  opacity: 0.7; /* A subtle change in opacity when hovered */
+  background-color: #86e273; /* Grey or any color you prefer */
+}
+
+  /* COULD USE TO MAKE THE ADD SYMBOL BIGGER, not used rn*/
+.addButton {
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #946fde;
+  color: white;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;  /* Centers text horizontally */
+  align-items: center;      /* Centers text vertically */
+}
+  
+.addButton:hover {
+    background-color: #7b52cc;
+}

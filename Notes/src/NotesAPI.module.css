@@ -1,0 +1,23 @@
+/* @import "tailwindcss"; */
+
+/* Apply styles to the grid container */
+.grid {
+    display: grid;
+    place-items: center; /* Centers the content vertically and horizontally */
+  }
+  
+/* Styling the save button */
+.saveButton {
+padding: 10px 20px;
+border: 2px solid black;
+border-radius: 50px; /* Rounded corners (similar to 4xl) */
+background-color: transparent;
+cursor: pointer;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.saveButton:hover {
+background-color: rgba(0, 0, 0, 0.1); /* Light background color on hover */
+}

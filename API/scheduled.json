@@ -1,0 +1,17 @@
+{
+    "schedule": [
+      {
+        "task": "Complete math homework",
+        "date": "2025-02-08",
+        "time": "09:00",
+        "duration": "1h"
+      },
+      {
+        "task": "Go to the gym",
+        "date": "2025-02-08",
+        "time": "10:30",
+        "duration": "1h"
+      }
+    ]
+  }
+  
